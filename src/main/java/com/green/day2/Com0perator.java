@@ -17,5 +17,6 @@ public class Com0perator {
 
         r1 = 10 >= 9;
         System.out.println(r1);
+
     }
 }
