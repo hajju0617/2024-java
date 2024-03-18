@@ -18,5 +18,19 @@ public class Com0perator {
         r1 = 10 >= 9;
         System.out.println(r1);
 
+        r1 = 10 >= 10;
+        System.out.println(r1);
+
+        r1 = 10 <= 10;
+        System.out.println(r1);
+
+        r1 = 10 == 10;
+        System.out.println(r1);
+
+        r1 = 10 != 10;
+        System.out.println(r1); //println = 메소드 (어떠한 일을 하는 대상)
+
+
+
     }
 }
