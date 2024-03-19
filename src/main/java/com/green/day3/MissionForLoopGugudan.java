@@ -10,5 +10,18 @@ public class MissionForLoopGugudan {
 
             //위와 같은 의미 printf 활용 (System.out.printf("%d x %d = %d\n", dan,i,dan*i);)
         }
+
+
+        int i,j;
+        for(i=1; i<10; i++) {
+            for(j=2; j<10; j++) {
+                System.out.printf("%3d x %d = %3d", j,i,j*i);
+
+                if (j % 5 == 0) {
+                    System.out.println();
+                }
+
+            }
+        }
     }
 }
