@@ -3,7 +3,7 @@ package com.green.day4;
 public class ContinueBreak {
     public static void main(String[] args) {
         // continue, break 둘 다 반복문 안에서 사용
-        // continue = skip, break = stop
+        // continue = skip, break = stop (반복문 빠져나옴)
 
         for (int i = 0; i<10; i++) {
             System.out.println(i);

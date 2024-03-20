@@ -10,5 +10,13 @@ public class MissionSumEvenForLoop {
             }
         }
         System.out.print(sum);
+
+        System.out.println();
+
+        int sum2 = 0;
+        for (int a=2; a<=100; a+=2) {
+            sum2 += a;
+        }
+        System.out.println(sum2);
     }
 }
