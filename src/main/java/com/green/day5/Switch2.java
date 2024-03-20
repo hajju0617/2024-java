@@ -25,7 +25,6 @@ public class Switch2 {
             default :
                 result = "성별을 입력해 주세요";
                 break;
-
         }
         System.out.println(result);
     }
