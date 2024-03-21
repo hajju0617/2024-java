@@ -2,10 +2,8 @@ package com.green.day6.ch2;
 
 public class P {
     public static void main(String[] args) {
-        double d =85.4;
-        int score = (int)d;
+        float f= 0.1f;
 
-        System.out.println("score = " + score);
-        System.out.println("d = " + d);
+        System.out.printf("f = %19.17f\n", f);
     }
 }
