@@ -6,6 +6,7 @@ public class CastingEx {
         // primitive type -> reference type으로 형변환은 안 된다. (보통 int->string)
         // reference type -> primitive type으로 형변환은 안 된다. (보통 string -> int)
         // 이때는 파싱처리 (Wrapper class 제외)
+        // 자바에서 파싱(Parsing)이란, 문자열이나 데이터를 분석하여 원하는 정보를 추출하는 과정
         /*
         문자열을 정수로 변환하는 예시
         String str = "10";

@@ -2,8 +2,10 @@ package com.green.day6.ch2;
 
 public class P {
     public static void main(String[] args) {
-        float f= 0.1f;
+        char c1= 'a';
 
-        System.out.printf("f = %19.17f\n", f);
+        //char c2 = c1 + 1;
+        char c2 = 'a' + 1;
+        System.out.println(c2);
     }
 }
