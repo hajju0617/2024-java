@@ -25,7 +25,7 @@ public class FlowEx5 {
             }
             else {
                 grade = 'C';
-                symbol = ' ';
+                symbol = '0';
             }
         }
 
