@@ -13,7 +13,7 @@ public class Switch3 {
         //객체의 주소값만 저장 가능(그리고 이것은 객체를 가리키고 있다고 표현)
 
         //jdk12버전부터 새로 추가된 문법 (switch expression)
-        //switch expression 문법 (break;를 따로 안 써도 됨 -> why? 표현식 이기 때문
+        //switch expression 문법 (break;를 따로 안 써도 됨 -> why? 표현식 이기 때문)
         String result = switch (gender) {
             case "여", "여자" -> "당신은 여성입니다.";
             case "남", "남자" -> "당신은 남성입니다.";
