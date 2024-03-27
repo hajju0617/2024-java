@@ -27,6 +27,25 @@ public class FlowEx29 {
 //            }while((copy /= 10) > 0);
 //            System.out.println();
 //        }
+
+        /* while 문 사용
+        for(int k = 1; k <= 100; k++) {
+            System.out.printf("k = %d ", k);
+
+            int copy = k; //원본값 보존
+            while (copy > 2) {
+                int oneDigit = copy % 10;
+                if (oneDigit % 3 == 0 && oneDigit != 0) {
+                    System.out.print("짝");
+                }
+                copy /= 10;
+            }
+            System.out.println();
+
+        }
+
+         */
+
     } //main
 
 }
