@@ -1,4 +1,4 @@
-package com.green.day10;
+package com.green.day10.ch5;
 import java.util.*;
 public class ArrayEx7 {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class ArrayEx7 {
         int num = 10;
         for(int i = 0; i < numArr.length; i++) {
             numArr[i] = num++;         // num++ 보단 10+i 해주는 게 나음 (num 변수 선언할 필요도 없어짐)
-        }
+        }                              // 어차피 i는 0이상 10미만 까지 +1씩 올라가니까 이걸 활용하자
         for(int i = 0; i < numArr.length; i++) {
             System.out.printf("numArr[%d] = %d\n", i, numArr[i]);
         }

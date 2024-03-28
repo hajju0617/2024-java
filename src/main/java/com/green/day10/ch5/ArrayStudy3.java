@@ -1,4 +1,4 @@
-package com.green.day10;
+package com.green.day10.ch5;
 
 import java.util.Arrays;
 

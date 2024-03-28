@@ -1,4 +1,4 @@
-package com.green.day10;
+package com.green.day10.ch5;
 import java.util.*;
 public class ArrayStudy4 {
     public static void main(String[] args) {
