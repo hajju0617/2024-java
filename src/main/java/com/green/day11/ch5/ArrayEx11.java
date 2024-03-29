@@ -10,7 +10,7 @@ public class ArrayEx11 {
 
         // numArr 모든 방에 0~9사이의 랜덤값 삽입
         for(int i = 0; i < numArr.length; i++) {
-            numArr[i] = (int)(Math.random() * 10);
+            numArr[i] = (int)(Math.random() * 10); // 0 <= random < 1
         }
         System.out.println(Arrays.toString(numArr));
 

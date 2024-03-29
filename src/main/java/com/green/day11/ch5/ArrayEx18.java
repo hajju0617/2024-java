@@ -27,7 +27,7 @@ public class ArrayEx18 {
         System.out.println("-----------------------------");
 
 
-
+        // 선생님 코드 // 값을 바꾸더라도 유연하게 적용 가능
         int[] sumArr = new int[score[0].length];
         for(int i = 0; i < score.length; i++) {
             for(int j = 0; j < score[i].length; j++) {
