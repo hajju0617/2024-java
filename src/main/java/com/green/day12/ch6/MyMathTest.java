@@ -14,6 +14,7 @@ public class MyMathTest {
 
     }
 }
+// 오버로딩 = 똑같은 이름의 메소드를 여러개 만들 수 있는 기법(무조건 사용할 수 있는 건 아님)
 
 class MyMath { // class 앞에 public 붙일 수 없음 -> 같은 패키지내에서만 가능
                // (public은 클래스 파일명과 class뒤에 적은 단어가 같아야 쓸 수 있다)
