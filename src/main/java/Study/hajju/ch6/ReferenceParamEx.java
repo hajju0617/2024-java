@@ -1,5 +1,5 @@
 package Study.hajju.ch6;
-class Data2 { int x; }
+//class Data2 { int x; }
 
 public class ReferenceParamEx {
     public static void main(String[] args) {

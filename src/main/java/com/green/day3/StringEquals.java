@@ -21,6 +21,8 @@ public class StringEquals {
         String so1 = new String("안녕");
         String so2 = new String("안녕");
 
+//        동일성 (equality, ==)	동등성 (identity, equals())
+
 //         자바에서 문자열 비교는 equals로
 //         == 연산자와 equals()메소드의 가장 큰 차이점은
 //         == 연산자는 비교하고자 하는 두개의 대상의 주소값을 비교하는데 반해
