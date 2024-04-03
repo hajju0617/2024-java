@@ -2,7 +2,7 @@ package com.green.day15.ch7;
 
 public class AbstractTest {
     public static void main(String[] args) {
-        Dog d = new Dog();
+//        Dog d = new Dog();
     }   //main
 }
 
