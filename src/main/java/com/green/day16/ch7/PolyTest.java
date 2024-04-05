@@ -26,15 +26,21 @@ public class PolyTest {
         System.out.println("-----------------------------------");
         Dog dog_4 = (Dog)ani_1;
         dog_4.sleep();
+        System.out.println("---------구분----------");
+        ani_2.crying();
+        Dog dog_6 = (Dog)ani_2; // (Dog) 붙여줌
+        dog_6.crying();
 
-        System.out.println("-----------------------------------");
+        System.out.println("---------------구분1--------------------");
 
         Dog dog_5 = (Dog)ani_2;
         dog_5.getup();
 
+        System.out.println("-------------구분2-------------");
+
 
         BullDog bullDog1 = (BullDog)ani_2;
-        bullDog1.sleep();
+        bullDog1.crying();
 
 
         //ani_2.sleep();
@@ -45,15 +51,17 @@ public class PolyTest {
 
 class Animal {                                              // Animal -> (Dog,Cat), Dog -> BullDog (상속 구조)
     void crying() { System.out.println("동물이 운다"); }
-    void getup() { System.out.println("동물이 일어났다"); }
+    void getup() { System.out.println("동물1이 일어났다"); }
 }
 class Dog extends Animal {
     void crying() { System.out.println("강아지가 멍멍"); }
     void sleep() { System.out.println("강아지가 잔다."); }
+    void getup() { System.out.println("동물2이 일어났다"); }
 }
 class BullDog extends Dog {
-    void crying() { System.out.println("불독이 월월"); }
-    void sleep() { System.out.println("불독이 잔다."); }
+    void cryingB() { System.out.println("불독이 월월"); }
+    void sleepB() { System.out.println("불독이 잔다."); }
+
 }
 class Cat extends Animal {
     void crying() { System.out.println("고양이가 야옹"); }
