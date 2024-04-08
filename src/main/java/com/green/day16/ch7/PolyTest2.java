@@ -23,7 +23,7 @@ public class PolyTest2 {
             Dog dog = (Dog)ani2;
             dog.sleep();
         }
-//        if(ani2 instanceof Dog dog) {       // enhanced instanceof
+//        if(ani2 instanceof Dog dog) {       // enhanced instanceof 문법
 //            dog.sleep();
 //        }
     }
