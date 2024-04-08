@@ -15,3 +15,13 @@ public class TvTest2 {
         System.out.println("t2의 channel 값은 " + t2.channel + "입니다.");
     }
 }
+
+//class Tv {
+//    String color;
+//    boolean power;
+//    int channel;
+//
+//    void power() { power = !power; }
+//    void channelUp() { ++channel; }
+//    void channelDown() { --channel; }
+//}
