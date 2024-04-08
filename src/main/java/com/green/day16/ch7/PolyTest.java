@@ -21,9 +21,7 @@ public class PolyTest {
 
         // 3. 타입은 알고 있는 메소드만 호출할 수 있고실행되는 기준은 객체 기준이다.
         ani_1.crying();
-//        ani_1.sleep();       //타입을 알고있는 것만 호출가능
-        dog_1 = (Dog)ani_1;
-        dog_1.sleep();
+        //ani_1.sleep();       //타입을 알고있는 것만 호출가능
 
         System.out.println("-----------------------------------");
         Dog dog_4 = (Dog)ani_1;
@@ -53,7 +51,7 @@ class Dog extends Animal {
     void crying() { System.out.println("강아지가 멍멍"); }
     void sleep() { System.out.println("강아지가 잔다."); }
 }
-class   BullDog extends Dog {
+class BullDog extends Dog {
     void crying() { System.out.println("불독이 월월"); }
     void sleep() { System.out.println("불독이 잔다."); }
 }

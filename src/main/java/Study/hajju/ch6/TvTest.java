@@ -2,12 +2,22 @@ package Study.hajju.ch6;
 
 public class TvTest {
     public static void main(String[] args) {
-        Tv t;
-        t = new Tv();
+        Tv t = new Tv();
         t.channel = 7;
         t.channelDown();
-        System.out.println("현재 채널은 " + t.channel + " 입니다.");
+        System.out.println("현재 채널은 " + t.channel + "입니다.");
 
+    }
+}
+//class Tv {
+//    String color;
+//    int channel;
+//    boolean power;
+//
+//    void power() { power = !power; }
+//    void channelUp() { ++channel; }
+//    void channelDown() { --channel; }
+//}
         /*
         void와 return의 개념
         void
@@ -29,7 +39,8 @@ public class TvTest {
         예를 들어, 어떤 클래스의 메소드를 다른 클래스에서 호출했다면, 그 호출한 클래스는 메소드에 대한 '외부'로 간주됩니다.
 
         반환값
-        '반환값'은 메소드가 외부에 제공하는 결과 값입니다. 메소드가 수행한 계산의 결과나 메소드 내부에서 생성된 객체 등이 될 수 있습니다.
+        '반환값'은 메소드가 외부에 제공하는 결과 값입니다
+        메소드가 수행한 계산의 결과나 메소드 내부에서 생성된 객체 등이 될 수 있습니다.
         메소드가 작업을 수행한 후 그 결과를 호출한 곳으로 전달하기 위해 사용됩니다.
         반환값이 있을 경우, 메소드는 return 키워드를 사용하여 이 값을 반환합니다.
 
@@ -61,5 +72,3 @@ public class TvTest {
         }
         여기서 Main 클래스는 Calculator 객체의 외부입니다. Main 클래스의 main 메소드에서 Calculator 클래스의 add 메소드를 호출하고 있으며, 이러한 상황에서 Main 클래스는 add 메소드에 대한 객체 외부로 간주됩니다.
          */
-    }
-}
