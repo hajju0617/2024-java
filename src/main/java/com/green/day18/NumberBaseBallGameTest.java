@@ -1,12 +1,13 @@
 package com.green.day18;
 
 import java.util.Arrays;
+import java.util.*;
 
 public class NumberBaseBallGameTest {
     public static void main(String[] args) {
         NumberBaseBallGame game = new NumberBaseBallGame(3);
         game.showArr();
-        //game.start();
+        game.start();
     }
 }
 
@@ -43,6 +44,39 @@ class NumberBaseBallGame {
     }
     public void showArr() {
         System.out.println(Arrays.toString(this.numArr));
-
+    }
+    void start() {
+        Scanner scan = new Scanner(System.in);
+        while(true) {
+            System.out.printf("숫자를 %d개 입력해 주세요. (구분은 스페이스) -> ", NUMBER_COUNT);
+            String strAnswer = scan.nextLine();
+            String[] answerStrArr = strAnswer.split(" ");   // 스페이스바를 기준으로 숫자 하나씩으로 나눔 -> "1 2 3" => {"1","2","3"}
+            int[] answerArr = new int[answerStrArr.length];
+            for(int i = 0; i < answerArr.length; i++) {
+                answerArr[i] = Integer.parseInt(answerStrArr[i]);
+            }
+            if (numArr.length != answerArr.length) {
+                System.out.println("잘못 입력 하셨습니다.");
+                continue;
+            }
+            int striker = 0, ball = 0;
+            for(int i = 0; i < answerArr.length; i++) {
+                for(int j = 0; j < answerArr.length; j++) {
+                    if(answerArr[i] == numArr[j]) {
+                        if (answerArr[i] == numArr[i]){
+                            striker++;
+                        } else {
+                            ball++;
+                        }
+                    }
+                }   // 안쪽 for
+            }   // 밖 for
+            if(striker == NUMBER_COUNT) {
+                System.out.println("정답!!");
+                break;
+            }
+            System.out.printf("striker = %d, ball = %d, out = %d\n", striker, ball, (NUMBER_COUNT - (striker + ball)));
+        }   //while
+        scan.close();
     }
 }

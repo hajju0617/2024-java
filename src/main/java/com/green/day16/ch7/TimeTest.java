@@ -8,6 +8,7 @@ public class TimeTest {
         time.setHour(22);   // hour 값 변경
         System.out.printf("hour : %d\n", time.getHour());
 
+
     }   //main
 }
 
