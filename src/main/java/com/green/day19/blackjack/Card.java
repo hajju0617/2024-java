@@ -13,7 +13,7 @@ public class Card {
     public String toString() {
         return String.format("%s(%s)", this.pattern, this.denomination);
     }
-    public int getScore() {
+    public int getPoint() {
         return switch(denomination) {
             case "10","J","Q","K" -> 10;
             case "A" -> 1;
@@ -32,6 +32,6 @@ class CardTest {
                                     // -> 오버라이딩으로 toString의 내용을 변경해줌
 //        System.out.println(c.toString());
         System.out.println("------");
-        int score = c.getScore();
+        int score = c.getPoint();
     }
 }
