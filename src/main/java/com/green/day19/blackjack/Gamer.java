@@ -1,7 +1,7 @@
 package com.green.day19.blackjack;
 import java.util.*;
 public class Gamer {
-    private List<Card> cards;
+    protected List<Card> cards;
     public Gamer() {
         cards = new ArrayList<>();
     }
