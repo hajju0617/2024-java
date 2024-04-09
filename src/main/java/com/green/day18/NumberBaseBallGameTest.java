@@ -69,17 +69,13 @@ class NumberBaseBallGame {
                             ball++;
                         }
                     }
-
-                }   // 안
-
-            }   // 밖
+                }   // 안쪽 for
+            }   // 밖 for
             if(striker == NUMBER_COUNT) {
                 System.out.println("정답!!");
                 break;
             }
             System.out.printf("striker = %d, ball = %d, out = %d\n", striker, ball, (NUMBER_COUNT - (striker + ball)));
-//            System.out.println(Arrays.toString(answerArr));
-
         }   //while
         scan.close();
     }

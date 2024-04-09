@@ -126,5 +126,5 @@ class Card {
     @Override
     public String toString() {
         return String.format("%s(%s)", kind, number);
-    }
+    }       //오버라이딩
 }
