@@ -16,9 +16,9 @@ public class InstanceofTest {
         System.out.println(fe.getClass().getName());
     }//main
 }
-class Car {
+class Card {
 
 }
-class FireEngine extends Car {
+class FireEngineL1 extends Car {
 
 }
