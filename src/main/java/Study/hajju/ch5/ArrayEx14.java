@@ -6,10 +6,9 @@ public class ArrayEx14 {
 
         for(int i = 0; i < src.length(); i++) {
             char ch = src.charAt(i);
-            System.out.println("src.charAt("+i+") : " + ch);
+            System.out.printf("src.charAt(%d) = %c\n", i, ch);
         }
         char[] chArr = src.toCharArray();
-
         System.out.println(chArr);
     }
 }
