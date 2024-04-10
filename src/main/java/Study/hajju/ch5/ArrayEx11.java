@@ -6,16 +6,15 @@ public class ArrayEx11 {
         int[] counter = new int[10];
 
         for(int i = 0; i < numArr.length; i++) {
-            numArr[i] = (int)(Math.random() *10); //0 <= random < 1
-            System.out.print(numArr[i]); // numArr[0~9] 값 입력 받음
-        }//for i
+            numArr[i] = (int)(Math.random() * 10);
+            System.out.print(numArr[i]);
+        }
         System.out.println();
-
-        for(int i =0; i < numArr.length; i++) {
+        for(int i = 0; i < numArr.length; i++) {
             counter[numArr[i]]++;
         }
-        for(int i =0; i < numArr.length; i++) {
-            System.out.println(i + "의 개수 : " + counter[i]);
+        for(int i = 0; i < numArr.length; i++) {
+            System.out.printf("%d의 개수 = %d\n", i, counter[i]);
         }
-    }//main
+    }
 }

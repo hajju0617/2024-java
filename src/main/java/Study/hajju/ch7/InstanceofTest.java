@@ -19,6 +19,6 @@ public class InstanceofTest {
 class Card {
 
 }
-class FireEngineL1 extends Car {
-
-}
+//class FireEngine extends Car {
+//
+//}
