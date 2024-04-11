@@ -8,8 +8,8 @@ public class Rule {
         int gamerPoint = getTotalPoint(gamer.openCards());
         int dealerPoint = getTotalPoint(dealer.openCards());
 
-//        System.out.println("gamer: " + gamer.openCards());
-//        System.out.println("dealer: " + dealer.openCards());
+        System.out.println("gamer: " + gamer.openCards());
+        System.out.println("dealer: " + dealer.openCards());
         if ((gamerPoint == dealerPoint) || (gamerPoint > MAX_POINT && dealerPoint > MAX_POINT)) {
             System.out.println("비겼습니다.");
         } else if(gamerPoint <= MAX_POINT && dealerPoint <= MAX_POINT) {

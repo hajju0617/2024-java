@@ -12,9 +12,6 @@ public class Game {
         initPhase(cardDeck, gamer, dealer);
         playingPhase(cardDeck, gamer, dealer);
 
-        System.out.println("gamer : " + gamer.openCards());
-        System.out.println("dealer : " + dealer.openCards());
-
         rule.whoIsWinner(gamer, dealer);
 
 
