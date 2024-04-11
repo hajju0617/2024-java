@@ -5,9 +5,7 @@ public class Gamer {
     public Gamer() {
         cards = new ArrayList<>();
     }
-    public void receiveCard(Card card) {
-        cards.add(card);
-    }
+    public void receiveCard(Card card) { cards.add(card); }
     public List<Card> openCards() {
         return cards;
     }

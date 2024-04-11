@@ -6,6 +6,8 @@ public class OperatorEx23 {
         String str2 = new String("abc");
         /*
         자바에서 문자열 비교는 equals로
+        기본 데이터 타입(예: int, double, char 등)의 경우, == 연산자는 값이 같은지 비교합니다.
+
         == 연산자와 equals()메소드의 가장 큰 차이점은
         == 연산자는 비교하고자 하는 두개의 대상의 주소값을 비교하는데 반해
         String클래스의 equals 메소드는 비교하고자 하는 두개의 대상의 값 자체를 비교한다는 것입니다.
