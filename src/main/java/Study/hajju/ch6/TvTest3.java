@@ -4,15 +4,14 @@ public class TvTest3 {
     public static void main(String[] args) {
         Tv t1 = new Tv();
         Tv t2 = new Tv();
-        System.out.println("t1의 channel값은 " + t1.channel + "입니다.");
-        System.out.println("t2의 channel값은 " + t2.channel + "입니다.");
+        System.out.println("t1의 channel 값은 " + t1.channel + "입니다");
+        System.out.println("t2의 channel 값은 " + t2.channel + "입니다");
 
         t2 = t1;
         t1.channel = 7;
-        System.out.println("t1의 channel값을 7로 변경하였습니다.");
-
-        System.out.println("t1의 channel값은 " + t1.channel + "입니다.");
-        System.out.println("t2의 channel값은 " + t2.channel + "입니다.");
+        System.out.println("t1의 channel 값을 7로 변경했음");
+        System.out.println("t1의 channel 값은 " + t1.channel + "입니다");
+        System.out.println("t2의 channel 값은 " + t2.channel + "입니다");
         /*
         TvTest2랑 TvTest3랑 동일하게 출력되는 부분이 있습니다.
         그 이유는 두 코드 모두에서 Tv 객체를 생성하고, 그 객체들의 초기 channel 값을 출력하는 과정이 포함되어 있기 때문
