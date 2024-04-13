@@ -22,7 +22,7 @@ public class MultiArrEx2 {
                 int tmp = bingo[i][j];
                 bingo[i][j] = bingo[x][y];
                 bingo[x][y] = tmp;
-            }
+            }   //
         }
         do {
             for(int i = 0; i < SIZE; i++) {

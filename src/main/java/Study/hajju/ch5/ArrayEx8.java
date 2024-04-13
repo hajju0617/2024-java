@@ -8,7 +8,7 @@ public class ArrayEx8 {
             ball[i] = i + 1;
         }
 
-        for(int i = 0; i < 6; i++) {
+        for(int i = 0; i < 6; i++) {        //
             int j = (int)(Math.random() * 45);
             int tmp = ball[i];
             ball[i] = ball[j];

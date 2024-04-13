@@ -15,7 +15,7 @@ public class ExamTest {
 
         rval = Exam.getRandomValue(1,101);
         Exam.printOddEven(rval);
-        System.out.println("------");
+        System.out.println("------");           //
         for(int i = 100; i < 104; i++) {
             System.out.println(200 - i);
         }
