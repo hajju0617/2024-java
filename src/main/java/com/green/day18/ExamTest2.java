@@ -16,7 +16,7 @@ public class ExamTest2 {
 
     }
 
-}
+}   //
 
 class Exam2 {
     static void inputRandomValue(int[] arr) {
