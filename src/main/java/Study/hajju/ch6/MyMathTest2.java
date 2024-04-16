@@ -1,6 +1,6 @@
 package Study.hajju.ch6;
 
-class MyMath2 {
+class MyMath {
     long a, b;
     long add()      { return a + b; }
     long subtract() { return a - b; }
@@ -14,13 +14,13 @@ class MyMath2 {
 }
 public class MyMathTest2 {
     public static void main(String[] args) {
-        System.out.println(MyMath2.add(200L, 100L));
-        System.out.println(MyMath2.subtract(200L, 100L));
-        System.out.println(MyMath2.multiply(200L, 100L));
-        System.out.println(MyMath2.divide(200.0, 100.0));
+        System.out.println(MyMath.add(200L, 100L));
+        System.out.println(MyMath.subtract(200L, 100L));
+        System.out.println(MyMath.multiply(200L, 100L));
+        System.out.println(MyMath.divide(200.0, 100.0));
 
         System.out.println("--------------------------------");
-        MyMath2 mm = new MyMath2();
+        MyMath mm = new MyMath();
         mm.a = 200L;
         mm.b = 100L;
         System.out.println(mm.add());

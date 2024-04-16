@@ -36,6 +36,34 @@ public class MemberDao {
 
         return result;
     }
+
+    public MemberEntity selMember(String memId) {
+        String sql = String.format("SELECT mem_id, mem_name, mem_number, addr, phone1" + " , phone2, height, debut_date " + " From member WHERE mem_id = '%s'", memId);
+        System.out.println(sql);
+        try(Connection conn = myConn.getConn();
+            Statement stat = conn.createStatement();
+            ResultSet rs = stat.executeQuery(sql)) {
+             if(rs.next()) {
+                 MemberEntity entity = new MemberEntity();
+                 entity.setMemId(memId);
+                 entity.setMemName(rs.getString("mem_name"));
+                 entity.setMemNumber(rs.getInt("mem_number"));
+                 entity.setAddr(rs.getString("addr"));
+                 entity.setPhone1(rs.getString("phone1"));
+                 entity.setPhone2(rs.getString("phone2"));
+                 entity.setHeight(rs.getInt("height"));
+                 entity.setDebutDate(rs.getString("debut_date"));
+
+                 return entity;
+             }
+             return null;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
     public List<MemberEntity> selMemberList() {
         List<MemberEntity> list = new ArrayList();
         String sql = "SELECT mem_id, mem_name, debut_date FROM member ORDER BY debut_date desc";
@@ -45,7 +73,7 @@ public class MemberDao {
             Statement stat = conn.createStatement();
             ResultSet rs = stat.executeQuery(sql)) {
 
-            while(rs.next()) {
+            while(rs.next()) {          // (rs.next)의 결과값은 boolean 타입 -> why? while 문 이므로.
                 String memId = rs.getString("mem_id");
                 String memName = rs.getString("mem_name");
                 String debutDate = rs.getString("debut_date");
@@ -107,7 +135,20 @@ public class MemberDao {
 
         return result;
     }
+class MemberDaoUpdateTest {
+    public static void main(String[] args) {
+        MemberDao memberDao = new MemberDao();
 
+        MemberEntity member = new MemberEntity();
+        member.setMemId("NJS");
+        member.setMemNumber(6);
+        member.setAddr("제주");
+        member.setPhone1("011");
+
+        int affectdRow = memberDao.updMember(member);
+        System.out.printf("affectedRow: %d\n", affectdRow);
+    }
+}
     public int delMember(MemberEntity entity) {
         String sql = String.format("Delete from member WHERE mem_id = '%s'", entity.getMemId());    // ' ' 생각하기
         System.out.println(sql);
@@ -145,20 +186,7 @@ class SubStringTest {
     }
 }
 
-class MemberDaoUpdateTest {
-    public static void main(String[] args) {
-        MemberDao memberDao = new MemberDao();
 
-        MemberEntity member = new MemberEntity();
-        member.setMemId("NJS");
-        member.setMemNumber(6);
-        member.setAddr("제주");
-        member.setPhone1("011");
-
-        int affectdRow = memberDao.updMember(member);
-        System.out.printf("affectedRow: %d\n", affectdRow);
-    }
-}
 
 
 class MemberDAOTest {
@@ -207,5 +235,13 @@ class SelListMemberTest {
         for(MemberEntity member : list) {
             System.out.println(member);
         }
+    }
+}
+
+class SelMemberTest {
+    public static void main(String[] args) {
+        MemberDao dao = new MemberDao();
+        MemberEntity entity = dao.selMember("WMN");
+        System.out.println(entity);
     }
 }
