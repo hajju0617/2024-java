@@ -28,5 +28,6 @@ public class MemberCall {
     void instanceMethod2(){
         staticMethod1();
         instanceMethod1();
+
     }
 }
