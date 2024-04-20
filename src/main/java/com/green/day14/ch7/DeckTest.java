@@ -23,7 +23,6 @@ public class DeckTest {
         deck.printAllCard();
     }   //main
 }
-
 class Deck {
     final int CARD_NUM;
     Card[] cards;
@@ -47,10 +46,7 @@ class Deck {
             cards[i] = cards[rIdx];
             cards[rIdx] = temp;
         }
-
     }
-
-
     int idx = 0;
     Deck() {
         CARD_NUM = 52;
@@ -69,7 +65,6 @@ class Deck {
                 };
                 cards[idx++] = c;
             }
-
         }
     }
     void printAllCard() {
@@ -77,14 +72,10 @@ class Deck {
             System.out.println(c);
         }
     }
-
 }
 class Card {
     String kind; // 무늬
     String number; // 번호(A, 2 ~ 10, J, Q, K)
-
-
-
     /*
     오류가 발생하는 이유는 Card 클래스에 매개변수 없는 기본 생성자(default constructor)가 없기 때문
     코드를 보면, Card 클래스에는 String kind와 String number를 매개변수로 받는 생성자만 정의되어 있습니다.
@@ -113,8 +104,7 @@ class Card {
             cards[idx++] = c;
         }
     }
-
-     */
+    */
     Card(String kind, String number) {
         this.kind = kind;
         this.number = number;
@@ -122,7 +112,6 @@ class Card {
     Card() {
 
     }
-
     @Override
     public String toString() {
         return String.format("%s(%s)", kind, number);
