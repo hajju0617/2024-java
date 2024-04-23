@@ -32,3 +32,4 @@ class Point3D extends Point {
         return "x = " + super.x + ", y = " + y + ", z = " + z;
     }
 }
+    
