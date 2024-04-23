@@ -21,8 +21,8 @@ public class TvFactory {
             default -> null;
         };
         Speaker speaker = switch (speakerName) {
-            case "bose" -> new BoseSpeaker(woofer);
-            case "genelec" -> new GenelecSpeaker(woofer);
+            case "bose" -> new BoseSpeaker(woofer);             // BoseSpeaker가 생성될때 앞서 만들어진 우퍼 주소값이 생성자로 삽입
+            case "genelec" -> new GenelecSpeaker(woofer);       // GenelecSpeaker가      "
             default -> null;
         };
         Tv tv = switch (tvName) {

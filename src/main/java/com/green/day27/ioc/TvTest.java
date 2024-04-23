@@ -10,5 +10,11 @@ public class TvTest {
         String wooferName = "hanil";                                        // 이것이 ioc
         Tv tv = tvFactory.factory(tvName, speakerName, wooferName);
         tv.sound();
+
+//
+
+//        String tvName = args[0];
+//        String speakerName = args[1];   ----> String[] 옆 args를 이용
+//        String wooferName = args[2];          1시 방향 Run 옆 화살표 클릭 -> edit configurations -> program arguments 에 값 대입 (스페이스로 구분해서 대입)
     }
 }
