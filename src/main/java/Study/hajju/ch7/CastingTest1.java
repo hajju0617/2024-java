@@ -8,27 +8,28 @@ public class CastingTest1 {
 
         fe.water();
         car = fe;
-        System.out.println("------------------");
-        //car.water();         <- 컴파일 에러 (Car 타입의 참조변수로는 water()를 호출할 수 없다.
-        fe2 = (FireEngine)car;
+//        car.water();
+        fe2 = (FireEngine) car;
         fe2.water();
 
-
     }
-}   //
+}
 
 class Car {
     String color;
     int door;
+
     void drive() {
-        System.out.println("drive, Brrrr~");
+        System.out.println("drive, Brrrrrr~");
     }
     void stop() {
-        System.out.println("stop!!!");
+        System.out.println("Stop!!!");
     }
 }
+
 class FireEngine extends Car {
     void water() {
-        System.out.println("water!!!");
+        System.out.println("Water!!!");
     }
 }
+
