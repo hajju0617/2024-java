@@ -1,51 +1,51 @@
 package Study.hajju.ch7;
 
 public class PolyArgumentTest {
-    public static void main(String[] args) {
-        Buyerp1 b = new Buyerp1();
+//    public static void main(String[] args) {
+//        Buyer b = new Buyer();
+//        b.buy(new Tv());
+////        Tv tv = new Tv();
+////        b.buy(tv);
+//        b.buy(new Computer());
+//
+//        System.out.printf("현재 남은 돈은 %d 만원입니다.\n", b.money);
+//        System.out.printf("현재 보너스 포인트는 %d 점 입니다.\n", b.bonusMoney);
+//    }
 
-        b.buy(new Tvp1());
-        b.buy(new Computerp1());
-
-        System.out.println("현재 남은 돈은 " + b.money + "만원입니다.");
-        System.out.println("현재 보너스 점수는 " + b.bonusPoint + "점입니다.");
-    }
 }
 
-class Productp1 {
-    int price;
-    int bonusPoint;
-    Productp1(int price) {
-        this.price = price;
-        bonusPoint = (int)(price / 10.0);
-    }
-}
-class Tvp1 extends Productp1 {
-    Tvp1() {
-        super(100);
-    }
-    public String toString() {
-        return "Tv";
-    }
-}
-class Computerp1 extends Productp1 {
-    Computerp1() {
-        super(200);
-    }
-    public String toString() {
-        return "Computer";
-    }
-}
-class Buyerp1 {
-    int money = 1000;
-    int bonusPoint = 0;
-    void buy(Productp1 p) {
-        if(money < p.price) {
-            System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
-            return;
-        }
-        money -= p.price;
-        bonusPoint += p.bonusPoint;
-        System.out.println(p + "을/를 구입하셨습니다");
-    }
-}
+//class Product {
+//    int price;
+//    int bonusPoint;
+//    Product(int price) {
+//        this.price = price;
+//        this.bonusPoint = (int)(price / 10.0);
+//    }
+//}
+//
+//class Tv extends Product {
+//    Tv() {
+//        super(100);
+//    }
+//    public String toString() { return "Tv"; }
+//}
+//class Computer extends Product {
+//    Computer() {
+//        super(200);
+//    }
+//    public String toString() { return "Computer"; }
+//}
+//class Buyer {
+//    int money = 1000;
+//    int bonusMoney = 0;
+//
+//    void buy(Product p) {
+//        if(money < p.price) {
+//            System.out.println("잔액이 부족하여 물건을 살 수 없음");
+//            return;
+//        }
+//        money -= p.price;
+//        bonusMoney += p.bonusPoint;
+//        System.out.println(p + "을/를 구입했다.");
+//    }
+//}
